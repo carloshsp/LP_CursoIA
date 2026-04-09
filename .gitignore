@@ -1,0 +1,11 @@
+# Documentos internos do curso
+docs/
+
+# Imagens de marketing (Gemini)
+assets/marketing/
+
+# Claude Code cache
+.claude/
+
+# macOS
+.DS_Store

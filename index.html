@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA para Médicos | Einstein Hospital Israelita</title>
+  <meta name="description" content="Curso de Inteligência Artificial aplicada à prática clínica e gestão. 30h de aulas ao vivo + 2 masterclasses. Certificado pelo Hospital Albert Einstein.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="IA para Médicos — Einstein">
+  <meta property="og:description" content="Domine as ferramentas de IA que estão transformando a medicina. Curso 100% prático, online ao vivo. Certificado Einstein.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/og-hero.jpg">
+  <meta property="og:url" content="https://ensino.einstein.br/curso_gt_ia_para_medicos_p15153/p">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar" aria-label="Navegação principal">
+    <div class="navbar__inner">
+      <a href="#hero" class="navbar__logo" aria-label="Einstein Hospital Israelita">
+        <img src="assets/images/MARCA_MAE_EINSTEIN_VERTICAL.png" alt="Einstein Hospital Israelita" class="navbar__logo-img">
+      </a>
+      <div class="navbar__links">
+        <a href="#modulos">Módulos</a>
+        <a href="#para-quem">Para Quem</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#investimento">Investimento</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://ensino.einstein.br/curso_gt_ia_para_medicos_p15153/p" target="_blank" rel="noopener" class="cta-button cta-button--sm">Inscreva-se</a>
+      </div>
+      <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Fechar menu">&times;</button>
+    <a href="#modulos" class="mobile-nav-link">Módulos</a>
+    <a href="#para-quem" class="mobile-nav-link">Para Quem</a>
+    <a href="#diferenciais" class="mobile-nav-link">Diferenciais</a>
+    <a href="#investimento" class="mobile-nav-link">Investimento</a>
+    <a href="#faq" class="mobile-nav-link">FAQ</a>
+    <a href="https://ensino.einstein.br/curso_gt_ia_para_medicos_p15153/p" target="_blank" rel="noopener" class="cta-button">Inscreva-se</a>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero" id="hero">
+    <canvas class="hero__canvas" id="heroCanvas"></canvas>
+    <div class="hero__bg-image" aria-hidden="true"></div>
+    <div class="hero__glow"></div>
+    <div class="hero__content">
+      <span class="hero__badge">Einstein Hospital Israelita</span>
+      <h1 class="hero__title gradient-text gradient-text--animated">IA para Médicos</h1>
+      <p class="hero__subtitle" id="heroSubtitle" data-text="Domine as ferramentas de IA que já estão transformando a medicina."></p>
+
+      <div class="hero__stats">
+        <a href="#modulos" class="hero__stat hero__stat--stagger" style="--stagger: 0">
+          <span class="hero__stat-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="m7 9 3 2-3 2"/><line x1="13" y1="13" x2="16" y2="13"/></svg>
+          </span>
+          <span class="hero__stat-value"><span class="counter" data-target="10">0</span> Módulos ao Vivo</span>
+          <span class="hero__stat-label">Aprenda com o uso real, não teórico</span>
+        </a>
+        <a href="#ferramentas" class="hero__stat hero__stat--stagger" style="--stagger: 1">
+          <span class="hero__stat-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93"/><path d="M8.24 9.93A4 4 0 0 1 12 2"/><path d="M12 8v2"/><path d="m4.93 19.07 1.41-1.41"/><path d="m17.66 5.34 1.41-1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 5.34-1.41-1.41"/><path d="m19.07 19.07-1.41-1.41"/><circle cx="12" cy="16" r="4"/><path d="M12 14v4"/><path d="M10 16h4"/></svg>
+          </span>
+          <span class="hero__stat-value">+30 Ferramentas de IA</span>
+          <span class="hero__stat-label">Muito mais que ChatGPT</span>
+        </a>
+        <a href="#diferenciais" class="hero__stat hero__stat--stagger" style="--stagger: 2">
+          <span class="hero__stat-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </span>
+          <span class="hero__stat-value">Diferencial Einstein</span>
+          <span class="hero__stat-label">Credibilidade que abre portas</span>
+        </a>
+      </div>
+      <div class="hero__cta-group">
+        <span class="hero__scarcity">Turma 1 &mdash; Vagas limitadas</span>
+        <a href="https://ensino.einstein.br/curso_gt_ia_para_medicos_p15153/p" target="_blank" rel="noopener" class="cta-button">
+          Quero me inscrever
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+      <p class="hero__meta">Online ao vivo &bull; 28/04 a 30/06/2025 &bull; Horário de Brasília</p>
+    </div>
+
+    <div class="hero__scroll">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== PROBLEMA ===================== -->
+    <section class="problema" id="problema">
+      <!-- Tool strip top -->
+      <div class="problema__tools-strip">
+        <div class="problema__tools-track problema__tools-track--left">
+          <img src="assets/images/tools/ChatGPT-Logo.png" alt="ChatGPT" class="problema__tool-icon">
+          <img src="assets/images/tools/Claude_AI_symbol.png" alt="Claude" class="problema__tool-icon">
+          <img src="assets/images/tools/perplexity-dark.png" alt="Perplexity" class="problema__tool-icon">
+          <img src="assets/images/tools/copilot.png" alt="Copilot" class="problema__tool-icon">
+          <img src="assets/images/tools/canva.png" alt="Canva" class="problema__tool-icon">
+          <img src="assets/images/tools/notebooklm-icon.png" alt="NotebookLM" class="problema__tool-icon">
+          <img src="assets/images/tools/consensus.png" alt="Consensus" class="problema__tool-icon">
+          <img src="assets/images/tools/glasshealth.png" alt="Glass Health" class="problema__tool-icon">
+          <img src="assets/images/tools/elevenlabs.png" alt="ElevenLabs" class="problema__tool-icon">
+          <img src="assets/images/tools/visualdx.png" alt="VisualDx" class="problema__tool-icon">
+          <!-- duplicate for loop -->
+          <img src="assets/images/tools/ChatGPT-Logo.png" alt="ChatGPT" class="problema__tool-icon">
+          <img src="assets/images/tools/Claude_AI_symbol.png" alt="Claude" class="problema__tool-icon">
+          <img src="assets/images/tools/perplexity-dark.png" alt="Perplexity" class="problema__tool-icon">
+          <img src="assets/images/tools/copilot.png" alt="Copilot" class="problema__tool-icon">
+          <img src="assets/images/tools/canva.png" alt="Canva" class="problema__tool-icon">
+          <img src="assets/images/tools/notebooklm-icon.png" alt="NotebookLM" class="problema__tool-icon">
+          <img src="assets/images/tools/consensus.png" alt="Consensus" class="problema__tool-icon">
+          <img src="assets/images/tools/glasshealth.png" alt="Glass Health" class="problema__tool-icon">
+          <img src="assets/images/tools/elevenlabs.png" alt="ElevenLabs" class="problema__tool-icon">
+          <img src="assets/images/tools/visualdx.png" alt="VisualDx" class="problema__tool-icon">
+        </div>
+      </div>
+
+      <!-- Text content -->
+      <div class="container">
+        <div class="problema__content">
+          <h2 class="problema__heading animate-on-scroll">Essas ferramentas já estão mudando a medicina.<br><span class="gradient-text">Seus colegas já estão usando.</span></h2>
+          <div class="problema__points">
+            <p class="problema__point animate-on-scroll" data-delay="100">
+              Seus colegas já usam IA para redigir prontuários, revisar exames e acelerar pesquisas. Quem aprendeu primeiro está fazendo em minutos o que antes levava horas.
+            </p>
+            <p class="problema__point animate-on-scroll" data-delay="200">
+              Novas ferramentas aparecem toda semana. Sem um filtro confiável, você gasta tempo testando o que não serve e deixa passar o que realmente faz diferença.
+            </p>
+            <p class="problema__point animate-on-scroll" data-delay="300">
+              Privacidade de dados, viés algorítmico e responsabilidade clínica são riscos reais. Usar IA sem preparo pode custar caro.
+            </p>
+          </div>
+          <p class="problema__closing animate-on-scroll"><span class="gradient-text">Você não precisa aprender sozinho.</span></p>
+        </div>
+      </div>
+
+      <!-- Tool strip bottom -->
+      <div class="problema__tools-strip">
+        <div class="problema__tools-track problema__tools-track--right">
+          <img src="assets/images/tools/lovable.png" alt="Lovable" class="problema__tool-icon">
+          <img src="assets/images/tools/bolt-ai-logo-01.png" alt="Bolt AI" class="problema__tool-icon problema__tool-icon--invert">
+          <img src="assets/images/tools/replit.png" alt="Replit" class="problema__tool-icon">
+          <img src="assets/images/tools/claudecode.png" alt="Claude Code" class="problema__tool-icon">
+          <img src="assets/images/tools/capcut.png" alt="CapCut" class="problema__tool-icon problema__tool-icon--invert">
+          <img src="assets/images/tools/elicit.png" alt="Elicit" class="problema__tool-icon">
+          <img src="assets/images/tools/scite.png" alt="Scite" class="problema__tool-icon">
+          <img src="assets/images/tools/openevidence.png" alt="OpenEvidence" class="problema__tool-icon">
+          <img src="assets/images/tools/ollama.png" alt="Ollama" class="problema__tool-icon problema__tool-icon--invert">
+          <img src="assets/images/tools/whatsapp.png" alt="WhatsApp" class="problema__tool-icon">
+          <!-- duplicate for loop -->
+          <img src="assets/images/tools/lovable.png" alt="Lovable" class="problema__tool-icon">
+          <img src="assets/images/tools/bolt-ai-logo-01.png" alt="Bolt AI" class="problema__tool-icon problema__tool-icon--invert">
+          <img src="assets/images/tools/replit.png" alt="Replit" class="problema__tool-icon">
+          <img src="assets/images/tools/claudecode.png" alt="Claude Code" class="problema__tool-icon">
+          <img src="assets/images/tools/capcut.png" alt="CapCut" class="problema__tool-icon problema__tool-icon--invert">
+          <img src="assets/images/tools/elicit.png" alt="Elicit" class="problema__tool-icon">
+          <img src="assets/images/tools/scite.png" alt="Scite" class="problema__tool-icon">
+          <img src="assets/images/tools/openevidence.png" alt="OpenEvidence" class="problema__tool-icon">
+          <img src="assets/images/tools/ollama.png" alt="Ollama" class="problema__tool-icon problema__tool-icon--invert">
+          <img src="assets/images/tools/whatsapp.png" alt="WhatsApp" class="problema__tool-icon">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== OVERVIEW ===================== -->
+    <section class="overview" id="sobre">
+      <div class="container">
+        <span class="section-label animate-on-scroll">Visão Geral</span>
+        <h2 class="section-title animate-on-scroll">O curso em números</h2>
+        <div class="overview__grid">
+          <div class="overview__cards">
+            <div class="overview__card animate-on-scroll" data-delay="100">
+              <span class="overview__card-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 10l4.553-2.276A1 1 0 0 1 21 8.618v6.764a1 1 0 0 1-1.447.894L15 14"/><rect x="1" y="6" width="14" height="12" rx="2"/></svg>
+              </span>
+              <span class="overview__card-label">Formato</span>
+              <span class="overview__card-value">Online ao vivo</span>
+            </div>
+            <div class="overview__card animate-on-scroll" data-delay="200">
+              <span class="overview__card-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>
+              <span class="overview__card-label">Horário</span>
+              <span class="overview__card-value">Terças, 19h–22h</span>
+            </div>
+            <div class="overview__card animate-on-scroll" data-delay="300">
+              <span class="overview__card-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="13" y2="11"/></svg>
+              </span>
+              <span class="overview__card-label">Duração</span>
+              <span class="overview__card-value">30h + 2 Masterclasses</span>
+            </div>
+            <div class="overview__card animate-on-scroll" data-delay="400">
+              <span class="overview__card-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><rect x="8" y="14" width="3" height="3" rx="0.5"/></svg>
+              </span>
+              <span class="overview__card-label">Período</span>
+              <span class="overview__card-value">28/04 a 30/06/2025</span>
+            </div>
+          </div>
+          <div class="overview__visual animate-on-scroll" data-delay="200">
+            <img src="assets/images/overview-medical-ai.jpg" alt="Médico interagindo com interface holográfica de IA — diagnóstico aumentado" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MÓDULOS ===================== -->
+    <section class="modulos" id="modulos">
+      <div class="container">
+        <div class="modulos__header">
+          <span class="section-label animate-on-scroll">O que você vai aprender</span>
+          <h2 class="section-title animate-on-scroll"><span class="gradient-text">10 Módulos Práticos</span></h2>
+        </div>
+        <div class="modulos__grid">
+
+          <!-- Módulo 01 -->
+          <div class="module-card glass-card animate-on-scroll" data-delay="100">
+            <div class="module-card__header">
+              <span class="module-card__number">01</span>
+              <span class="module-card__title">A Ciência do Prompting Médico</span>
+              <svg class="module-card__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+            <div class="module-card__details">
+              <p class="module-card__desc">Extraia respostas precisas da IA para hipóteses diagnósticas, resumos de prontuário, planos terapêuticos e comunicação com pacientes.</p>
+              <div class="module-card__tools">
+                <span class="tool-badge">ChatGPT</span>
+                <span class="tool-badge">Claude</span>
+                <span class="tool-badge">Perplexity</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Módulo 02 -->
+          <div class="module-card glass-card animate-on-scroll" data-delay="200">
+            <div class="module-card__header">
+              <span class="module-card__number">02</span>
+              <span class="module-card__title">Agentes de IA Autônomos</span>
+              <svg class="module-card__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+            <div class="module-card__details">
+              <p class="module-card__desc">Delegue pesquisas completas, navegação em múltiplos sites e produção de entregáveis a agentes inteligentes.</p>
+              <div class="module-card__tools">
+                <span class="tool-badge">Claude Cowork</span>
+                <span class="tool-badge">Perplexity Computer</span>
+                <span class="tool-badge">Manus</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Módulo 03 -->
+          <div class="module-card glass-card animate-on-scroll" data-delay="100">
+            <div class="module-card__header">
+              <span class="module-card__number">03</span>
+              <span class="module-card__title">O Prontuário Invisível</span>
+              <svg class="module-card__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+            <div class="module-card__details">
+              <p class="module-card__desc">Ambient listening com geração automática de anamnese, exame físico, hipótese diagnóstica e conduta clínica.</p>
+              <div class="module-card__tools">
+                <span class="tool-badge">Voa</span>
+                <span class="tool-badge">Turi</span>
+                <span class="tool-badge">OpenAI Whisper</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Módulo 04 -->
+          <div class="module-card glass-card animate-on-scroll" data-delay="200">
+            <div class="module-card__header">
+              <span class="module-card__number">04</span>
+              <span class="module-card__title">Diagnóstico Aumentado</span>
+              <svg class="module-card__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+            <div class="module-card__details">
+              <p class="module-card__desc">Apoio à decisão clínica com IA para diagnósticos diferenciais, análise de imagem e casos complexos.</p>
+              <div class="module-card__tools">
+                <span class="tool-badge">OpenEvidence</span>
+                <span class="tool-badge">VisualDx</span>
+                <span class="tool-badge">Glass Health</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Módulo 05 -->
+          <div class="module-card glass-card animate-on-scroll" data-delay="100">
+            <div class="module-card__header">
+              <span class="module-card__number">05</span>
+              <span class="module-card__title">Aceleração Científica</span>
+              <svg class="module-card__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+            <div class="module-card__details">
+              <p class="module-card__desc">Revisão de literatura, localização de artigos, extração de dados e escrita científica acelerada com IA.</p>
+              <div class="module-card__tools">
+                <span class="tool-badge">Consensus</span>
+                <span class="tool-badge">Scite</span>
+                <span class="tool-badge">Elicit</span>
+                <span class="tool-badge">NotebookLM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Módulo 06 -->
+          <div class="module-card glass-card animate-on-scroll" data-delay="200">
+            <div class="module-card__header">
+              <span class="module-card__number">06</span>
+              <span class="module-card__title">O Médico Influenciador</span>
+              <svg class="module-card__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+            <div class="module-card__details">
+              <p class="module-card__desc">Produção de conteúdo médico ético: vídeos, roteiros, posts e carrosséis com autoridade digital.</p>
+              <div class="module-card__tools">
+                <span class="tool-badge">Canva AI</span>
+                <span class="tool-badge">CapCut Studio</span>
+                <span class="tool-badge">ElevenLabs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Módulo 07 -->
+          <div class="module-card glass-card animate-on-scroll" data-delay="100">
+            <div class="module-card__header">
+              <span class="module-card__number">07</span>
+              <span class="module-card__title">O Consultório que Nunca Dorme</span>
+              <svg class="module-card__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+            <div class="module-card__details">
+              <p class="module-card__desc">Automação de triagem, agendamento, follow-up e reativação de pacientes via WhatsApp.</p>
+              <div class="module-card__tools">
+                <span class="tool-badge">WATI</span>
+                <span class="tool-badge">Kommo</span>
+                <span class="tool-badge">Blip</span>
+                <span class="tool-badge">WhatsApp Business</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Módulo 08 -->
+          <div class="module-card glass-card animate-on-scroll" data-delay="200">
+            <div class="module-card__header">
+              <span class="module-card__number">08</span>
+              <span class="module-card__title">Vibe Coding — Apps sem Programação</span>
+              <svg class="module-card__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+            <div class="module-card__details">
+              <p class="module-card__desc">Crie aplicativos e ferramentas digitais usando linguagem natural, sem escrever uma linha de código.</p>
+              <div class="module-card__tools">
+                <span class="tool-badge">Lovable</span>
+                <span class="tool-badge">Bolt.new</span>
+                <span class="tool-badge">Replit Agent</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Módulo 09 -->
+          <div class="module-card glass-card animate-on-scroll" data-delay="100">
+            <div class="module-card__header">
+              <span class="module-card__number">09</span>
+              <span class="module-card__title">Blindagem Jurídica e LGPD</span>
+              <svg class="module-card__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+            <div class="module-card__details">
+              <p class="module-card__desc">Privacidade, modelos locais, anonimização de dados e governança no uso de IA em saúde.</p>
+              <div class="module-card__tools">
+                <span class="tool-badge">Ollama</span>
+                <span class="tool-badge">LM Studio</span>
+                <span class="tool-badge">Open WebUI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Módulo 10 -->
+          <div class="module-card glass-card animate-on-scroll" data-delay="200">
+            <div class="module-card__header">
+              <span class="module-card__number">10</span>
+              <span class="module-card__title">Inteligência Financeira</span>
+              <svg class="module-card__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+            <div class="module-card__details">
+              <p class="module-card__desc">Fluxo de caixa, identificação de glosas, previsão de cenários e dashboards financeiros com IA.</p>
+              <div class="module-card__tools">
+                <span class="tool-badge">Excel Copilot</span>
+                <span class="tool-badge">ChatGPT ADA</span>
+                <span class="tool-badge">Nibo</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FERRAMENTAS (TOOLS CAROUSEL) ===================== -->
+    <section class="ferramentas" id="ferramentas">
+      <div class="container">
+        <div class="ferramentas__header animate-on-scroll">
+          <span class="section-label">ARSENAL TECNOLÓGICO</span>
+          <h2 class="section-title"><span class="gradient-text">Ferramentas que Você Vai Dominar</span></h2>
+        </div>
+      </div>
+
+      <div class="carousel animate-on-scroll" data-delay="200">
+        <!-- ROW 1 — scrolls left -->
+        <div class="carousel__row">
+          <div class="carousel__track carousel__track--left">
+            <div class="carousel__item glass-card"><img src="assets/images/tools/ChatGPT-Logo.png" alt="ChatGPT" class="carousel__logo"><span class="carousel__name">ChatGPT</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/Claude_AI_symbol.png" alt="Claude" class="carousel__logo"><span class="carousel__name">Claude</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/copilot.png" alt="Copilot" class="carousel__logo"><span class="carousel__name">Copilot</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/perplexity-dark.png" alt="Perplexity" class="carousel__logo"><span class="carousel__name">Perplexity</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/canva.png" alt="Canva" class="carousel__logo"><span class="carousel__name">Canva</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/elevenlabs.png" alt="ElevenLabs" class="carousel__logo"><span class="carousel__name">ElevenLabs</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/capcut.png" alt="CapCut" class="carousel__logo carousel__logo--invert"><span class="carousel__name">CapCut</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/notebooklm-icon.png" alt="NotebookLM" class="carousel__logo"><span class="carousel__name">NotebookLM</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/consensus.png" alt="Consensus" class="carousel__logo"><span class="carousel__name">Consensus</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/elicit.png" alt="Elicit" class="carousel__logo"><span class="carousel__name">Elicit</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/scite.png" alt="Scite" class="carousel__logo"><span class="carousel__name">Scite</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/glasshealth.png" alt="Glass Health" class="carousel__logo"><span class="carousel__name">Glass Health</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/openevidence.png" alt="OpenEvidence" class="carousel__logo"><span class="carousel__name">OpenEvidence</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/visualdx.png" alt="VisualDx" class="carousel__logo"><span class="carousel__name">VisualDx</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/lovable.png" alt="Lovable" class="carousel__logo"><span class="carousel__name">Lovable</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/bolt-ai-logo-01.png" alt="Bolt AI" class="carousel__logo carousel__logo--invert"><span class="carousel__name">Bolt AI</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/replit.png" alt="Replit" class="carousel__logo"><span class="carousel__name">Replit</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/claudecode.png" alt="Claude Code" class="carousel__logo"><span class="carousel__name">Claude Code</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/ollama.png" alt="Ollama" class="carousel__logo carousel__logo--invert"><span class="carousel__name">Ollama</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/openclaw.png" alt="OpenClaw" class="carousel__logo"><span class="carousel__name">OpenClaw</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/whatsapp.png" alt="WhatsApp" class="carousel__logo"><span class="carousel__name">WhatsApp</span></div>
+            <!-- Duplicate for seamless loop -->
+            <div class="carousel__item glass-card"><img src="assets/images/tools/ChatGPT-Logo.png" alt="ChatGPT" class="carousel__logo"><span class="carousel__name">ChatGPT</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/Claude_AI_symbol.png" alt="Claude" class="carousel__logo"><span class="carousel__name">Claude</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/copilot.png" alt="Copilot" class="carousel__logo"><span class="carousel__name">Copilot</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/perplexity-dark.png" alt="Perplexity" class="carousel__logo"><span class="carousel__name">Perplexity</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/canva.png" alt="Canva" class="carousel__logo"><span class="carousel__name">Canva</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/elevenlabs.png" alt="ElevenLabs" class="carousel__logo"><span class="carousel__name">ElevenLabs</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/capcut.png" alt="CapCut" class="carousel__logo carousel__logo--invert"><span class="carousel__name">CapCut</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/notebooklm-icon.png" alt="NotebookLM" class="carousel__logo"><span class="carousel__name">NotebookLM</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/consensus.png" alt="Consensus" class="carousel__logo"><span class="carousel__name">Consensus</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/elicit.png" alt="Elicit" class="carousel__logo"><span class="carousel__name">Elicit</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/scite.png" alt="Scite" class="carousel__logo"><span class="carousel__name">Scite</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/glasshealth.png" alt="Glass Health" class="carousel__logo"><span class="carousel__name">Glass Health</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/openevidence.png" alt="OpenEvidence" class="carousel__logo"><span class="carousel__name">OpenEvidence</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/visualdx.png" alt="VisualDx" class="carousel__logo"><span class="carousel__name">VisualDx</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/lovable.png" alt="Lovable" class="carousel__logo"><span class="carousel__name">Lovable</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/bolt-ai-logo-01.png" alt="Bolt AI" class="carousel__logo carousel__logo--invert"><span class="carousel__name">Bolt AI</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/replit.png" alt="Replit" class="carousel__logo"><span class="carousel__name">Replit</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/claudecode.png" alt="Claude Code" class="carousel__logo"><span class="carousel__name">Claude Code</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/ollama.png" alt="Ollama" class="carousel__logo carousel__logo--invert"><span class="carousel__name">Ollama</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/openclaw.png" alt="OpenClaw" class="carousel__logo"><span class="carousel__name">OpenClaw</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/whatsapp.png" alt="WhatsApp" class="carousel__logo"><span class="carousel__name">WhatsApp</span></div>
+          </div>
+        </div>
+
+        <!-- ROW 2 — scrolls right (reversed order) -->
+        <div class="carousel__row">
+          <div class="carousel__track carousel__track--right">
+            <div class="carousel__item glass-card"><img src="assets/images/tools/glasshealth.png" alt="Glass Health" class="carousel__logo"><span class="carousel__name">Glass Health</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/openevidence.png" alt="OpenEvidence" class="carousel__logo"><span class="carousel__name">OpenEvidence</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/visualdx.png" alt="VisualDx" class="carousel__logo"><span class="carousel__name">VisualDx</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/lovable.png" alt="Lovable" class="carousel__logo"><span class="carousel__name">Lovable</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/bolt-ai-logo-01.png" alt="Bolt AI" class="carousel__logo carousel__logo--invert"><span class="carousel__name">Bolt AI</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/replit.png" alt="Replit" class="carousel__logo"><span class="carousel__name">Replit</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/claudecode.png" alt="Claude Code" class="carousel__logo"><span class="carousel__name">Claude Code</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/ollama.png" alt="Ollama" class="carousel__logo carousel__logo--invert"><span class="carousel__name">Ollama</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/openclaw.png" alt="OpenClaw" class="carousel__logo"><span class="carousel__name">OpenClaw</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/whatsapp.png" alt="WhatsApp" class="carousel__logo"><span class="carousel__name">WhatsApp</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/ChatGPT-Logo.png" alt="ChatGPT" class="carousel__logo"><span class="carousel__name">ChatGPT</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/Claude_AI_symbol.png" alt="Claude" class="carousel__logo"><span class="carousel__name">Claude</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/copilot.png" alt="Copilot" class="carousel__logo"><span class="carousel__name">Copilot</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/perplexity-dark.png" alt="Perplexity" class="carousel__logo"><span class="carousel__name">Perplexity</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/canva.png" alt="Canva" class="carousel__logo"><span class="carousel__name">Canva</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/elevenlabs.png" alt="ElevenLabs" class="carousel__logo"><span class="carousel__name">ElevenLabs</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/capcut.png" alt="CapCut" class="carousel__logo carousel__logo--invert"><span class="carousel__name">CapCut</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/notebooklm-icon.png" alt="NotebookLM" class="carousel__logo"><span class="carousel__name">NotebookLM</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/consensus.png" alt="Consensus" class="carousel__logo"><span class="carousel__name">Consensus</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/elicit.png" alt="Elicit" class="carousel__logo"><span class="carousel__name">Elicit</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/scite.png" alt="Scite" class="carousel__logo"><span class="carousel__name">Scite</span></div>
+            <!-- Duplicate for seamless loop -->
+            <div class="carousel__item glass-card"><img src="assets/images/tools/glasshealth.png" alt="Glass Health" class="carousel__logo"><span class="carousel__name">Glass Health</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/openevidence.png" alt="OpenEvidence" class="carousel__logo"><span class="carousel__name">OpenEvidence</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/visualdx.png" alt="VisualDx" class="carousel__logo"><span class="carousel__name">VisualDx</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/lovable.png" alt="Lovable" class="carousel__logo"><span class="carousel__name">Lovable</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/bolt-ai-logo-01.png" alt="Bolt AI" class="carousel__logo carousel__logo--invert"><span class="carousel__name">Bolt AI</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/replit.png" alt="Replit" class="carousel__logo"><span class="carousel__name">Replit</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/claudecode.png" alt="Claude Code" class="carousel__logo"><span class="carousel__name">Claude Code</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/ollama.png" alt="Ollama" class="carousel__logo carousel__logo--invert"><span class="carousel__name">Ollama</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/openclaw.png" alt="OpenClaw" class="carousel__logo"><span class="carousel__name">OpenClaw</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/whatsapp.png" alt="WhatsApp" class="carousel__logo"><span class="carousel__name">WhatsApp</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/ChatGPT-Logo.png" alt="ChatGPT" class="carousel__logo"><span class="carousel__name">ChatGPT</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/Claude_AI_symbol.png" alt="Claude" class="carousel__logo"><span class="carousel__name">Claude</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/copilot.png" alt="Copilot" class="carousel__logo"><span class="carousel__name">Copilot</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/perplexity-dark.png" alt="Perplexity" class="carousel__logo"><span class="carousel__name">Perplexity</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/canva.png" alt="Canva" class="carousel__logo"><span class="carousel__name">Canva</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/elevenlabs.png" alt="ElevenLabs" class="carousel__logo"><span class="carousel__name">ElevenLabs</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/capcut.png" alt="CapCut" class="carousel__logo carousel__logo--invert"><span class="carousel__name">CapCut</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/notebooklm-icon.png" alt="NotebookLM" class="carousel__logo"><span class="carousel__name">NotebookLM</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/consensus.png" alt="Consensus" class="carousel__logo"><span class="carousel__name">Consensus</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/elicit.png" alt="Elicit" class="carousel__logo"><span class="carousel__name">Elicit</span></div>
+            <div class="carousel__item glass-card"><img src="assets/images/tools/scite.png" alt="Scite" class="carousel__logo"><span class="carousel__name">Scite</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PARA QUEM ===================== -->
+    <section class="para-quem" id="para-quem">
+      <div class="container">
+        <div class="para-quem__header">
+          <span class="section-label animate-on-scroll">Para Quem</span>
+          <h2 class="section-title animate-on-scroll"><span class="gradient-text">Feito para médicos como você</span></h2>
+        </div>
+        <div class="para-quem__grid">
+          <div class="para-quem__card glass-card animate-on-scroll" data-delay="100">
+            <div class="para-quem__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.8 2.3A.3.3 0 1 0 5 2.3"/>
+                <path d="M4 7V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3"/>
+                <path d="M14 9a2 2 0 0 0-2-2H6v6h6a2 2 0 0 0 2-2v-2Z"/>
+                <path d="M14 13h2"/>
+                <path d="M10 9v4"/>
+              </svg>
+            </div>
+            <p class="para-quem__text">Médicos de qualquer especialidade</p>
+          </div>
+          <div class="para-quem__card glass-card animate-on-scroll" data-delay="200">
+            <div class="para-quem__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/>
+                <path d="m14.5 4-5 16"/>
+              </svg>
+            </div>
+            <p class="para-quem__text">Sem conhecimento prévio em programação</p>
+          </div>
+          <div class="para-quem__card glass-card animate-on-scroll" data-delay="300">
+            <div class="para-quem__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+            </div>
+            <p class="para-quem__text">Gestores e médicos empreendedores</p>
+          </div>
+          <div class="para-quem__card glass-card animate-on-scroll" data-delay="400">
+            <div class="para-quem__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="15" r="1"/><path d="M14 4a2 2 0 0 1 2 2v14"/><path d="M6 14v-3a6 6 0 0 1 12 0v3"/>
+                <path d="M6 8V6a6 6 0 0 1 12 0v2"/>
+              </svg>
+            </div>
+            <p class="para-quem__text">Pesquisadores e acadêmicos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DIFERENCIAIS ===================== -->
+    <section class="diferenciais" id="diferenciais">
+      <div class="container">
+        <div class="diferenciais__header">
+          <span class="section-label animate-on-scroll">Diferenciais</span>
+          <h2 class="section-title animate-on-scroll"><span class="gradient-text">Por que este curso?</span></h2>
+        </div>
+        <div class="diferenciais__grid">
+          <div class="diferencial-card glass-card animate-on-scroll" data-delay="100">
+            <span class="diferencial-card__number">01</span>
+            <h3 class="diferencial-card__title">Certificado Einstein</h3>
+            <p class="diferencial-card__desc">Certificado de curso de atualização emitido pelo Einstein Hospital Israelita.</p>
+          </div>
+          <div class="diferencial-card glass-card animate-on-scroll" data-delay="200">
+            <span class="diferencial-card__number">02</span>
+            <h3 class="diferencial-card__title">100% Prático</h3>
+            <p class="diferencial-card__desc">Sem teoria abstrata. Cada módulo usa ferramentas reais em cenários clínicos concretos.</p>
+          </div>
+          <div class="diferencial-card glass-card animate-on-scroll" data-delay="300">
+            <span class="diferencial-card__number">03</span>
+            <h3 class="diferencial-card__title">Zero Programação</h3>
+            <p class="diferencial-card__desc">Desenhado para médicos. Nenhum conhecimento técnico ou em programação necessário.</p>
+          </div>
+          <div class="diferencial-card glass-card animate-on-scroll" data-delay="100">
+            <span class="diferencial-card__number">04</span>
+            <h3 class="diferencial-card__title">Ao Vivo e Interativo</h3>
+            <p class="diferencial-card__desc">Encontros síncronos com espaço para perguntas e discussão em tempo real.</p>
+          </div>
+          <div class="diferencial-card glass-card animate-on-scroll" data-delay="200">
+            <span class="diferencial-card__number">05</span>
+            <h3 class="diferencial-card__title">30+ Ferramentas de IA</h3>
+            <p class="diferencial-card__desc">De ChatGPT a modelos locais: o arsenal completo para a prática médica moderna.</p>
+          </div>
+          <div class="diferencial-card glass-card animate-on-scroll" data-delay="300">
+            <span class="diferencial-card__number">06</span>
+            <h3 class="diferencial-card__title">Aulas Gravadas por 30 Dias</h3>
+            <p class="diferencial-card__desc">Não conseguiu assistir ao vivo? Reveja as aulas quando quiser, por até 30 dias.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INVESTIMENTO ===================== -->
+    <section class="investimento" id="investimento">
+      <div class="container">
+        <div class="investimento__header">
+          <span class="section-label animate-on-scroll">Investimento</span>
+          <h2 class="section-title animate-on-scroll">Invista na sua evolução</h2>
+        </div>
+        <div class="pricing-card glass-card animate-on-scroll">
+          <p class="pricing-card__original">R$ 6.900,00</p>
+          <span class="pricing-card__coupon">CUPOM IAMEDICOS &mdash; 35% OFF</span>
+          <p class="pricing-card__price gradient-text">R$ 4.485,00</p>
+          <p class="pricing-card__installments">Consulte condições de parcelamento no site de inscrição</p>
+          <a href="https://ensino.einstein.br/curso_gt_ia_para_medicos_p15153/p" target="_blank" rel="noopener" class="cta-button">
+            Inscreva-se agora
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <p class="pricing-card__note">Use o cupom <strong>IAMEDICOS</strong> no momento da inscrição para aplicar o desconto.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="faq__header">
+          <span class="section-label animate-on-scroll">Perguntas Frequentes</span>
+          <h2 class="section-title animate-on-scroll"><span class="gradient-text">Tire suas dúvidas</span></h2>
+        </div>
+        <div class="faq__list">
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-item__question" aria-expanded="false">
+              O curso é exclusivo para médicos?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Sim. A linguagem, o contexto e as aplicações são voltadas à prática médica de qualquer especialidade.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll" data-delay="100">
+            <button class="faq-item__question" aria-expanded="false">
+              Preciso saber programar?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Não. O curso foi desenhado para ser 100% acessível, mesmo sem qualquer conhecimento em tecnologia ou programação.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll" data-delay="200">
+            <button class="faq-item__question" aria-expanded="false">
+              O curso é mais teórico ou prático?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Foco totalmente prático. Cada módulo utiliza ferramentas reais em cenários clínicos concretos, com demonstrações ao vivo.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-item__question" aria-expanded="false">
+              Serve para qualquer especialidade médica?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Sim. As aplicações se adaptam a diferentes contextos e especialidades, da atenção primária às áreas mais especializadas.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll" data-delay="100">
+            <button class="faq-item__question" aria-expanded="false">
+              As aulas ficam gravadas?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Sim. As aulas ficam disponíveis por 30 dias após a realização, acessíveis no portal do curso.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll" data-delay="200">
+            <button class="faq-item__question" aria-expanded="false">
+              Qual é o formato das aulas?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Online ao vivo, às terças-feiras das 19h às 22h (horário de Brasília), com interação em tempo real.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-item__question" aria-expanded="false">
+              Tem certificado?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Sim. Certificado de curso de atualização emitido pelo Einstein Hospital Israelita.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll" data-delay="100">
+            <button class="faq-item__question" aria-expanded="false">
+              Como funciona o cupom de desconto?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Use o cupom <strong>IAMEDICOS</strong> no momento da inscrição para obter 35% de desconto. O valor final fica R$ 4.485,00.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo">
+        <img src="assets/images/MARCA_MAE_EINSTEIN_VERTICAL.png" alt="Einstein Hospital Israelita" class="footer__logo-img">
+      </div>
+      <p style="color: var(--text-secondary); margin-bottom: var(--space-lg); font-size: 0.95rem;">IA para Médicos: Inteligência Artificial aplicada à prática clínica e gestão</p>
+
+      <div class="footer__contact">
+        <a href="https://wa.me/551121513330" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          (11) 2151-3330
+        </a>
+        <a href="https://ensino.einstein.br/curso_gt_ia_para_medicos_p15153/p" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Página de inscrição
+        </a>
+      </div>
+
+      <a href="https://ensino.einstein.br/curso_gt_ia_para_medicos_p15153/p" target="_blank" rel="noopener" class="cta-button cta-button--sm" style="margin-bottom: var(--space-xl);">Inscreva-se agora</a>
+
+      <p class="footer__disclaimer">Este site é um material complementar de divulgação do curso de atualização "IA para Médicos" do Einstein Hospital Israelita. Para informações oficiais completas, acesse o site de inscrição.</p>
+      <p class="footer__copy">&copy; 2025 Einstein Hospital Israelita. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ElevenLabs Conversational AI Widget -->
+  <elevenlabs-convai agent-id="agent_0401knsdzczzen6v9hxd0dmaew6c"></elevenlabs-convai>
+  <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
